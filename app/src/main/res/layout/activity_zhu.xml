@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.jingdong.ZhuActivity">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ft"
+            android:layout_above="@+id/rl"
+            ></FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/rl"
+        android:layout_alignParentBottom="true"
+        android:padding="5dip"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+            <RadioButton
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img1"
+                android:id="@+id/sy"
+                />
+            <RadioButton
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:drawableTop="@drawable/img2"
+                android:id="@+id/fl"
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img3"
+                android:id="@+id/fx"
+                />
+            <RadioButton
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img4"
+                android:id="@+id/gwc"
+                />
+            <RadioButton
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:id="@+id/wd"
+
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img5"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
