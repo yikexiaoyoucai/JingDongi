@@ -2,9 +2,6 @@ package bean;
 
 import java.util.List;
 
-/**
- * Created by asus on 2017/10/22.
- */
 
 public class DD {
 

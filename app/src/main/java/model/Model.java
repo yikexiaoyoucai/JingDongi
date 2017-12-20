@@ -20,9 +20,6 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-/**
- * Created by asus on 2017/10/16.
- */
 
 public class Model {
     private Sousu sousu;

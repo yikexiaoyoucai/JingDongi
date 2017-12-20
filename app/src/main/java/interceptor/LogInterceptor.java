@@ -8,12 +8,6 @@ import okhttp3.FormBody;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 
-/**
- * Author:kson
- * E-mail:19655910@qq.com
- * Time:2017/10/18
- * Description:
- */
 public class LogInterceptor implements Interceptor {
 
     public static String TAG = "LogInterceptor";

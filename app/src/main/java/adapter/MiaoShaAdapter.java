@@ -15,9 +15,6 @@ import java.util.List;
 
 import bean.MS;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class MiaoShaAdapter extends RecyclerView.Adapter<MiaoShaAdapter.MiaoShaViewHolder> {
     private List<MS> list;

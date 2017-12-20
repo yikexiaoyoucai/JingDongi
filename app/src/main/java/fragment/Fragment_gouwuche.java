@@ -31,9 +31,6 @@ import presenter.Presenter;
 import presenter.Presenter_A;
 import view.View_A;
 
-/**
- * Created by asus on 2017/10/8.
- */
 
 public class Fragment_gouwuche extends Fragment implements View.OnClickListener, view.View,View_A{
     private View view;

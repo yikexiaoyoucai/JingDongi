@@ -26,10 +26,6 @@ import common.ShareUtis;
 import common.ViewUtils;
 import presenter.Presenter;
 
-/**
- * Created by asus on 2017/10/9.
- */
-
 public class ShopTwoAdapter extends RecyclerView.Adapter<ShopTwoAdapter.ShopTwoViewHolder> implements view.View{
     private List<CX.DataBean.ListBean> list;
     private Context context;

@@ -1,14 +1,11 @@
 package common;
 
-/**
- * Created by asus on 2017/10/8.
- */
 
 public class Api {
     public static final String LUNBO="http://120.27.23.105/ad/getAd";
     public static final String SHANGPIN="http://120.27.23.105/product/getCatagory";
     public static final String REGIN="http://120.27.23.105/user/reg";
-    public static final String LOGIN="http://120.27.23.105/user/login";
+    public static final String LOGIN="http://www.zhaoapi.cn/user/login";
     public static final String FENLEI="http://120.27.23.105/product/getCatagory";
     public static final String USER="http://120.27.23.105/user/getUserInfo";
     public static final String ZIFENLEI="http://120.27.23.105/product/getProductCatagory";

@@ -16,9 +16,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 import presenter.Presenter_A;
 
-/**
- * Created by asus on 2017/10/21.
- */
 
 public class Model_A
 {
@@ -29,11 +26,9 @@ public class Model_A
         void XFail(String code,String msg);
         void XError(String code,String msg);
     }
-
     public void setXiugaidingdan(XIUGAIDINGDAN xiugaidingdan) {
         this.xiugaidingdan = xiugaidingdan;
     }
-
     public interface CHUANGJIAN{
         void CSuccess(String result);
         void CFail(String code,String msg);
@@ -51,7 +46,6 @@ public class Model_A
             public void onFailure(Call call, IOException e) {
                 
             }
-
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String result = response.body().string();
@@ -62,7 +56,6 @@ public class Model_A
 //                    if ("0".equals(code)) {
                         chuangjian.CSuccess(result);
 //                    } else {
-
 //                    }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -78,7 +71,6 @@ public class Model_A
             public void onFailure(Call call, IOException e) {
 
             }
-
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String result = response.body().string();

@@ -3,9 +3,6 @@ package presenter;
 import model.Model_A;
 import view.View_A;
 
-/**
- * Created by asus on 2017/10/21.
- */
 
 public class Presenter_A implements Model_A.CHUANGJIAN,Model_A.XIUGAIDINGDAN {
     private Model_A model_a;

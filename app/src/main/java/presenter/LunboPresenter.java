@@ -3,9 +3,6 @@ package presenter;
 import model.LunboModel;
 import view.LunboView;
 
-/**
- * Created by asus on 2017/10/8.
- */
 
 public class LunboPresenter implements LunboModel.Lunbo, LunboModel.Shangpin,LunboModel.MiaoSha,LunboModel.Tuijian{
   private LunboModel lunboModel;

@@ -19,9 +19,6 @@ import presenter.Presenter;
 
 import static com.example.asus.jingdong.R.id.xq;
 
-/**
- * Created by asus on 2017/10/17.
- */
 
 public class Fragment_xiangqing extends Fragment implements view.View {
     private View view;

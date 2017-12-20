@@ -18,9 +18,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/**
- * Created by asus on 2017/10/11.
- */
 
 public class ShangPinModel {
     private Fenlei fenlei;

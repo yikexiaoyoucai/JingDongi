@@ -21,7 +21,7 @@ public class ReginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regin);
         initview();
-        lp=new LoginPresenter(this);
+        lp=new LoginPresenter(this,this);
     }
 
     private void initview() {

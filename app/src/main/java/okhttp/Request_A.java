@@ -14,14 +14,10 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/**
- * Created by asus on 2017/10/21.
- */
 
 public class Request_A {
     private Context context;
     private static Request_A intsal;
-
     private   Request_A (Context context){
         this.context=context;
 

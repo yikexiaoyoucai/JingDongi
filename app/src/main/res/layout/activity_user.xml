@@ -96,7 +96,6 @@
         android:layout_centerVertical="true"
         />
 
-
         <View
             android:background="#cccccc"
             android:layout_alignParentBottom="true"
@@ -118,13 +117,58 @@
             app:layout_marginRightPercent="4%"
             android:layout_centerVertical="true"
             />
-
-
         <View
             android:background="#cccccc"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="1sp"/>
     </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
 
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            app:layout_widthPercent="10%"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="14%w"
+            android:src="@drawable/icon_open"
+            android:id="@+id/ic"
+            />
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            app:layout_widthPercent="10%"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="14%w"
+            android:src="@drawable/report1"
+            android:id="@+id/ic1"
+            />
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            app:layout_widthPercent="10%"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="14%w"
+            android:src="@drawable/copylink1"
+            android:id="@+id/ic2"
+            />
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            app:layout_widthPercent="10%"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="14%w"
+            android:src="@drawable/shiled1"
+            android:id="@+id/ic3"
+            />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
 </com.zhy.android.percent.support.PercentLinearLayout>

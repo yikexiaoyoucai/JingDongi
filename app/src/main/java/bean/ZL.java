@@ -1,8 +1,5 @@
 package bean;
 
-/**
- * Created by asus on 2017/10/13.
- */
 
 public class ZL {
     public String title;

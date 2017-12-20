@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 
 import com.example.asus.jingdong.R;
 
-/**
- * Created by asus on 2017/10/8.
- */
 
 public class Fragment_faxian extends Fragment{
 

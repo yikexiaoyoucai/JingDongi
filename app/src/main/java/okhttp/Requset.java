@@ -11,9 +11,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/**
- * Created by asus on 2017/10/16.
- */
 
 public class Requset {
     public static void call(String url, Map<String,String> parmes, final Callback callback){

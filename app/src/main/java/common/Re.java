@@ -4,9 +4,6 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class Re  extends RecyclerView.ItemDecoration{
     private int top;

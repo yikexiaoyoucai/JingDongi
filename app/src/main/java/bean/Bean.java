@@ -1,9 +1,5 @@
 package bean;
 
-/**
- * Created by asus on 2017/10/16.
- */
-
 public class Bean {
     public String code;
     public String images;

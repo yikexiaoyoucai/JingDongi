@@ -1,19 +1,19 @@
 package presenter;
 
+import android.app.Activity;
+import android.test.ActivityTestCase;
+
 import model.LoginModel;
 import view.LoginView;
 
-/**
- * Created by asus on 2017/10/10.
- */
 
 public class LoginPresenter implements LoginModel.Regin,LoginModel.Login,LoginModel.UpDate {
     private LoginModel loginModel;
     private LoginView loginView;
 
-    public LoginPresenter(LoginView loginView) {
+    public LoginPresenter(LoginView loginView, Activity context) {
         this.loginView = loginView;
-        loginModel=new LoginModel();
+        loginModel=new LoginModel(context);
         loginModel.setRegin(this);
         loginModel.setLogin(this);
         loginModel.setUpDate(this);

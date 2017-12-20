@@ -3,9 +3,6 @@ package presenter;
 import model.ShangPinModel;
 import view.ShangPinView;
 
-/**
- * Created by asus on 2017/10/11.
- */
 
 public class ShangPinPresenter implements ShangPinModel.Fenlei, ShangPinModel.ZILEI,ShangPinModel.ZI{
     private ShangPinModel shangPinModel;

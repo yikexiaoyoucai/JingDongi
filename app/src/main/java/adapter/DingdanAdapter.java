@@ -21,9 +21,6 @@ import bean.DD;
 import bean.MS;
 import zhifubao.PayDemoActivity;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class DingdanAdapter extends RecyclerView.Adapter<DingdanAdapter.DingdanViewHolder> {
 

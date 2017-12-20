@@ -1,8 +1,5 @@
 package view;
 
-/**
- * Created by asus on 2017/10/10.
- */
 
 public interface LoginView {
     void ReginSuccess(String result);

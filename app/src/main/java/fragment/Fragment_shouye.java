@@ -45,9 +45,6 @@ import common.Re;
 import presenter.LunboPresenter;
 import view.LunboView;
 
-/**
- * Created by asus on 2017/10/8.
- */
 
 public class Fragment_shouye extends Fragment implements LunboView, View.OnClickListener {
     private View view;

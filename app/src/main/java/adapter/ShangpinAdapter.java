@@ -14,9 +14,6 @@ import java.util.List;
 
 import bean.Icon;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class ShangpinAdapter extends RecyclerView.Adapter<ShangpinAdapter.SpGridViewHolder> {
     private List<Icon> listt;

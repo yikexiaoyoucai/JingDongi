@@ -5,9 +5,6 @@ import android.content.SharedPreferences;
 
 import com.example.asus.jingdong.App;
 
-/**
- * Created by asus on 2017/10/11.
- */
 
 public class ShareUtis {
     private final static String KEY = "JingSp";

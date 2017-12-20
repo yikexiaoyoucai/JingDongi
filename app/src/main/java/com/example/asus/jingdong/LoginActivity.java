@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initview();
-        lp=new LoginPresenter(this);
+        lp=new LoginPresenter(this,this);
         sp= ShareUtis.getPreferences();
 
     }

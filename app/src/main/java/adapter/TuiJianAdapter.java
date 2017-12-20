@@ -16,9 +16,6 @@ import java.util.List;
 import bean.MS;
 import bean.TJ;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class TuiJianAdapter extends RecyclerView.Adapter<TuiJianAdapter.TuiJianViewHolder> {
     private List<TJ> list;

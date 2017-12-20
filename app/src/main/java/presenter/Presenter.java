@@ -4,9 +4,6 @@ import common.ViewUtils;
 import model.Model;
 import view.View;
 
-/**
- * Created by asus on 2017/10/16.
- */
 
 public class Presenter implements Model.Sousu,Model.Shanchu,Model.Chaxun{
     private Model model;

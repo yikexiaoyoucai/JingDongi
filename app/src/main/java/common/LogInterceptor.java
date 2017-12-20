@@ -8,9 +8,6 @@ import okhttp3.FormBody;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 
-/**
- * Created by asus on 2017/10/22.
- */
 
 public class LogInterceptor implements Interceptor {
     public static String  TAG = "LogInterceptor";

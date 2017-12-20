@@ -25,10 +25,6 @@ import common.Api;
 import presenter.ShangPinPresenter;
 import view.ShangPinView;
 
-/**
- * Created by asus on 2017/10/8.
- */
-
 public class Fragment_feilei extends Fragment implements ShangPinView {
     private RecyclerView rv;
     private View view;

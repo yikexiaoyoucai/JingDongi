@@ -16,9 +16,6 @@ import java.util.List;
 import bean.FL;
 import bean.TJ;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class FenLeiAdapter extends RecyclerView.Adapter<FenLeiAdapter.FenleiViewHolder> {
     private List<FL> list;

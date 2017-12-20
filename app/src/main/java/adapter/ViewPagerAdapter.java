@@ -14,9 +14,6 @@ import java.util.List;
 import bean.Icon;
 import common.Re;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class ViewPagerAdapter extends PagerAdapter {
     private Context context;

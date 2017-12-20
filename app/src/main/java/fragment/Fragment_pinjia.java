@@ -7,9 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by asus on 2017/10/17.
- */
 
 public class Fragment_pinjia extends Fragment{
     @Nullable

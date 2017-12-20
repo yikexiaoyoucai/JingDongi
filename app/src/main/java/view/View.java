@@ -1,8 +1,5 @@
 package view;
 
-/**
- * Created by asus on 2017/10/16.
- */
 
 public interface View {
     void Success(String result);

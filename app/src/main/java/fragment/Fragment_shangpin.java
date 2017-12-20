@@ -26,9 +26,6 @@ import bean.XQ;
 import common.ShareUtis;
 import presenter.Presenter;
 
-/**
- * Created by asus on 2017/10/17.
- */
 
 public class Fragment_shangpin  extends Fragment implements view.View{
     private View view;

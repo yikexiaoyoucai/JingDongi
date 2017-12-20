@@ -14,9 +14,6 @@ import java.util.List;
 
 import bean.SP;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class RecycleTwoAdapter extends RecyclerView.Adapter<RecycleTwoAdapter.RecycleTwoViewHolder> {
     private List<SP> list;

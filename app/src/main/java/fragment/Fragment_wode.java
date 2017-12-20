@@ -41,9 +41,6 @@ import okhttp3.Response;
 import static com.example.asus.jingdong.R.drawable.login;
 import static com.umeng.socialize.a.b.d.i;
 
-/**
- * Created by asus on 2017/10/8.
- */
 
 public class Fragment_wode extends Fragment implements View.OnClickListener {
     private TextView login_regist;

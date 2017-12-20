@@ -19,9 +19,6 @@ import bean.FL;
 import bean.SP;
 import common.Re;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class RecycleOnewAdapter extends RecyclerView.Adapter<RecycleOnewAdapter.RecycleOneViewHolder> {
     private List<SP> list;

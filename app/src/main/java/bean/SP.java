@@ -1,8 +1,5 @@
 package bean;
 
-/**
- * Created by asus on 2017/10/12.
- */
 
 public class SP {
     public String cid;

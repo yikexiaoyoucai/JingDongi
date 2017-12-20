@@ -1,5 +1,8 @@
 package com.example.asus.jingdong;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -52,11 +55,24 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
     private static Uri tempUri;
     private LoginPresenter lp;
     private PercentRelativeLayout dd;
+    private ImageView ic;
+    private ImageView ic1;
+    private ImageView ic2;
+    private ImageView ic3;
+    private int a=0;
+    private ObjectAnimator animator;
+    private ObjectAnimator animator1;
+    private ObjectAnimator animator2;
+    private ObjectAnimator animator3;
+    private ObjectAnimator fanimator;
+    private ObjectAnimator fanimator1;
+    private ObjectAnimator fanimator2;
+    private ObjectAnimator fanimator3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
-        lp=new LoginPresenter(this);
+        lp=new LoginPresenter(this,this);
         intiview();
         initdata();
         sp= ShareUtis.getPreferences();
@@ -72,6 +88,61 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
             }
 
         }
+        //伸出时的动画
+        animator=ObjectAnimator.ofFloat(ic,"rotation",0f,180f);
+        animator1=ObjectAnimator.ofFloat(ic1,"translationX", 0f,-80f);
+        animator2=ObjectAnimator.ofFloat(ic2,"translationX", 0f,-160f);
+        animator3=ObjectAnimator.ofFloat(ic3,"translationX", 0f,-240f);
+        //缩回时的动画
+        fanimator=ObjectAnimator.ofFloat(ic,"rotation",0f,-180f);
+        fanimator1=ObjectAnimator.ofFloat(ic1,"translationX", -80f,0f);
+        fanimator2=ObjectAnimator.ofFloat(ic2,"translationX", -160f,0f);
+        fanimator3=ObjectAnimator.ofFloat(ic3,"translationX", -240f,0f);
+        //给伸出动画设置监听
+        animator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animator) {
+                ic.setImageResource(R.drawable.icon_packup);
+                //动画结束改变图片
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animator) {
+
+            }
+        });
+        fanimator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animator) {
+              ic.setImageResource(R.drawable.icon_open);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animator) {
+
+            }
+        });
+
     }
 
     private void initdata() {
@@ -102,6 +173,29 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
         nc.setOnClickListener(this);
         dd= (PercentRelativeLayout) findViewById(R.id.dd);
         dd.setOnClickListener(this);
+        ic= (ImageView) findViewById(R.id.ic);
+        ic1= (ImageView) findViewById(R.id.ic1);
+        ic2= (ImageView) findViewById(R.id.ic2);
+        ic3= (ImageView) findViewById(R.id.ic3);
+        ic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                a++;
+                if(a%2==1){
+                    //第一次点击是实现伸出效果
+                    AnimatorSet animatorSet=new AnimatorSet();//动画集合
+                    animatorSet.play(animator).with(animator1).with(animator2).with(animator3);
+                    animatorSet.setDuration(1000);
+                    animatorSet.start();
+                }else{
+                    //再点击一次实现缩回效果
+                    AnimatorSet animatorSet1=new AnimatorSet();//动画集合
+                    animatorSet1.play(fanimator).with(fanimator1).with(fanimator2).with(fanimator3);
+                    animatorSet1.setDuration(1000);
+                    animatorSet1.start();
+                }
+            }
+        });
     }
 
 

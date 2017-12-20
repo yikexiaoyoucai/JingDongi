@@ -6,9 +6,6 @@ import android.content.Context;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
 
-/**
- * Created by asus on 2017/10/11.
- */
 
 public class App extends Application {
     {

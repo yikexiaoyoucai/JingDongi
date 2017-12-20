@@ -25,9 +25,6 @@ import bean.SP;
 import presenter.ShangPinPresenter;
 import view.ShangPinView;
 
-/**
- * Created by asus on 2017/10/12.
- */
 
 public class Fragment_fl extends Fragment implements ShangPinView {
     private View view;

@@ -24,9 +24,6 @@ import bean.CXX;
 import bean.SP;
 import common.Re;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class ShopOneAdapter extends RecyclerView.Adapter<ShopOneAdapter.ShopOneViewHolder> {
     private  List<CX.DataBean>  list;

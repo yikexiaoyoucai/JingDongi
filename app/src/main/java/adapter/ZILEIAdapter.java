@@ -17,9 +17,6 @@ import java.util.List;
 import bean.SP;
 import bean.ZL;
 
-/**
- * Created by asus on 2017/10/9.
- */
 
 public class ZILEIAdapter extends RecyclerView.Adapter<ZILEIAdapter.ZILEIViewHolder> {
     private List<ZL> list;
